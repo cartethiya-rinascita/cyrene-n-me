@@ -1,6 +1,6 @@
 use std::collections::HashMap;
 
-use crate::utils::fibonacci;
+use crate::algorithms::fibonacci;
 
 pub fn run_fibonacci() {
     let n: u64 = 65;

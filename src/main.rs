@@ -1,8 +1,11 @@
-mod data_structure;
-mod runner;
-mod utils;
+pub mod algorithms;
+
+use crate::algorithms::fibonacci::FibonacciCalculator;
 
 fn main() {
-    runner::linkedlist_runner::run_linkedlist();
-    runner::fibonacci_runner::run_fibonacci();
+    let mut fib = FibonacciCalculator::new();
+    for i in 0..65 {
+        print!("{} ", fib.calculate(i));
+    }
+    println!();
 }
